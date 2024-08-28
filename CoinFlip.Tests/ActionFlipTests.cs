@@ -8,7 +8,7 @@ public sealed class ActionFlipTests : Tester
     {
         //Arrange
         Action heads = null!;
-        var tails = Fixture.Create<Action>();
+        var tails = Dummy.Create<Action>();
 
         //Act
         var action = () => Coin.Flip(heads, tails);
@@ -21,7 +21,7 @@ public sealed class ActionFlipTests : Tester
     public void Flip_WhenTailsIsNull_Throw()
     {
         //Arrange
-        var heads = Fixture.Create<Action>();
+        var heads = Dummy.Create<Action>();
         Action tails = null!;
 
         //Act

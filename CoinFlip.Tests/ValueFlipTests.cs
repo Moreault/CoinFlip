@@ -7,8 +7,8 @@ public sealed class ValueFlipTests : Tester
     public void Flip_Always_ReturnEitherValues()
     {
         //Arrange
-        var heads = Fixture.Create<string>();
-        var tails = Fixture.Create<string>();
+        var heads = Dummy.Create<string>();
+        var tails = Dummy.Create<string>();
 
 
         //Act
@@ -25,7 +25,7 @@ public sealed class ValueFlipTests : Tester
     public void FlipOrDefault_Always_OnlyReturnValueSometimes()
     {
         //Arrange
-        var heads = Fixture.Create<string>();
+        var heads = Dummy.Create<string>();
 
         //Act
         var result = new List<string?>();

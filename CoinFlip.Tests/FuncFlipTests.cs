@@ -8,7 +8,7 @@ public sealed class FuncFlipTests : Tester
     {
         //Arrange
         Func<string> heads = null!;
-        var tails = Fixture.Create<Func<string>>();
+        var tails = Dummy.Create<Func<string>>();
 
         //Act
         var action = () => Coin.Flip(heads, tails);
@@ -21,7 +21,7 @@ public sealed class FuncFlipTests : Tester
     public void WhenTailsIsNull_Throw()
     {
         //Arrange
-        var heads = Fixture.Create<Func<string>>();
+        var heads = Dummy.Create<Func<string>>();
         Func<string> tails = null!;
 
         //Act
@@ -35,8 +35,8 @@ public sealed class FuncFlipTests : Tester
     public void WhenHeadsAndTailsAreNotNull_ReturnAny()
     {
         //Arrange
-        var heads = Fixture.Create<string>();
-        var tails = Fixture.Create<string>();
+        var heads = Dummy.Create<string>();
+        var tails = Dummy.Create<string>();
 
         //Act
         var results = new List<string?>();
@@ -65,7 +65,7 @@ public sealed class FuncFlipTests : Tester
     public void FlipOrDefault_WhenHeadsIsNotNull_ReturnEitherValueOrDefault()
     {
         //Arrange
-        var heads = Fixture.Create<string>();
+        var heads = Dummy.Create<string>();
 
         //Act
         var results = new List<string?>();

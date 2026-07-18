@@ -1,6 +1,4 @@
-// Global using directives
-
-global using FluentAssertions;
 global using ToolBX.CoinFlip;
-global using ToolBX.Dummies;
 global using WhiteJackalStudio.TestTools;
+global using ToolBX.AssertBox;
+global using ToolBX.AssertBox.Assertions;
